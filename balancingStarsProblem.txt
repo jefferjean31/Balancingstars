@@ -1,16 +1,20 @@
 #include<stdio.h>
+//checking for open bracket
 int openBracket(char ch){
   if(ch=='{'||ch=='['||ch=='(')//true
     return 1;
   else
     return 0;
 }
+//checking for close bracket
 int closeBracket(char ch){
   if(ch=='}'||ch==']'||ch==')')//true
     return 1;
   else
     return 0;
 }
+
+//checking for matching brackets
 int matchingPair(char open,char close){
   int diff=close-open;
   if(diff==2||diff==1)//true
